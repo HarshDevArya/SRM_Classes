@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+}
+
+.card {
+  margin-left: 50%;
+  /* width: 30%; */
+  width: 200px;
+  height: 400px;
+  text-align: center;
+}
+
+.card img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 60% 30%;
+  border-radius: 5px;
+}
+
+.card2 {
+  width: 200px;
+  height: 400px;
+  text-align: center;
+}
+
+.card2 img {
+  width: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  box-shadow: 10px 10px 10px;
+}
+
+.card2 img:hover {
+  opacity: 1;
+}
+.card3 img {
+  width: 200px;
+  object-fit: cover;
+  object-position: 60% 30%;
+  clip-path: circle();
+}
+
+.bgimg {
+  height: 600px;
+  background-image: url("./image/antman.jpg");
+  background-repeat: no-repeat;
+  background-color: bisque;
+  background-position: 30% 30%;
+}
+
+.bgimg h1 {
+  color: white;
+}
+
+/* Postion */
+
+.color {
+  margin: auto;
+  width: 900px;
+  height: 800px;
+  background-color: bisque;
+  position: relative;
+}
+
+.red {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: absolute;
+  left: 200px;
+  z-index: 1;
+}
+
+.yellow {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  position: relative;
+  left: 300px;
+  z-index: 2;
+}
+
+.pink {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  position: fixed;
+  top: 0;
+  /* z-index: 99999999; */
+}
+
+/* .container {
+  width: 200px;
+  text-align: center;
+}
+
+.container img {
+  width: 200px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.container2 {
+  width: 200px;
+  text-align: center;
+  box-shadow: 10px 10px 10px;
+}
+
+.container2 img {
+  width: 100%;
+}
+
+.wasp img {
+  width: 200px;
+  clip-path: circle();
+}
+
+.Wolv img {
+  width: 200px;
+  height: 300px;
+}
+
+.heroImage {
+  height: 800px;
+  background-image: url("./image/cap.webp");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: 30% 30%;
+}
+
+.herotext {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+
+.image-text {
+  font-size: 120px;
+  font-weight: bold;
+  background-image: url("https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  color: transparent;
+} */
