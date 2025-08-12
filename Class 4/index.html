@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Learning Hub</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .nav-container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .nav-title {
+        text-align: center;
+        color: #333;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+      }
+
+      .nav-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-bottom: 30px;
+      }
+
+      .nav-card {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 25px;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+      }
+
+      .nav-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+      }
+
+      .nav-card h3 {
+        margin: 0 0 10px 0;
+        font-size: 1.3em;
+      }
+
+      .nav-card p {
+        margin: 0;
+        opacity: 0.9;
+        font-size: 0.9em;
+      }
+
+      .demo-section {
+        margin-top: 40px;
+        padding: 20px;
+        background: #f8f9fa;
+        border-radius: 8px;
+      }
+
+      .demo-section h2 {
+        color: #333;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav-container">
+      <h1 class="nav-title">🎨 CSS Learning Hub</h1>
+
+      <div class="nav-grid">
+        <a href="selector.html" class="nav-card">
+          <h3>CSS Selectors</h3>
+          <p>
+            Learn about different CSS selectors including element, class, ID,
+            and pseudo-selectors
+          </p>
+        </a>
+
+        <a href="boxModal.html" class="nav-card">
+          <h3>Box Model</h3>
+          <p>
+            Understand CSS box model with margin, border, padding, and content
+            areas
+          </p>
+        </a>
+
+        <a href="exercise.html" class="nav-card">
+          <h3>Profile Cards</h3>
+          <p>
+            Practice with CSS selectors and box model using profile card
+            examples
+          </p>
+        </a>
+
+        <a href="forms.html" class="nav-card">
+          <h3>HTML Forms</h3>
+          <p>
+            Master HTML form elements including inputs, selects, textareas, and
+            file uploads
+          </p>
+        </a>
+      </div>
+
+      <div class="demo-section">
+        <h2>Quick Demo</h2>
+        <div class="box">This box has an outline outside the border.</div>
+        <button class="btn">Click me</button>
+      </div>
+    </div>
+
+    <!-- <form>
+      <div>
+        <label for="search">🔍</label>
+        <input
+          type="search"
+          name="search_query"
+          placeholder=" 🔍"
+          id="search" />
+      </div>
+
+      <label for="date">DOB</label>
+      <input type="date" name="date" id="date" />
+
+      <label for="file">file</label>
+      <input type="file" name="file" id="file" />
+
+      <label for="num">Phone</label>
+      <input type="number" name="num" id="num" max="10" />
+
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" required />
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
+      <br />
+      <br />
+      <label for="num">Phone</label>
+      <input type="number" name="num" id="num" />
+      <br />
+      <br />
+      <label for="pwd">Password</label>
+      <input type="password" name="pwd" id="pwd" />
+      <br /><br />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" value="male" id="male" />
+
+      <label for="female">Femle</label>
+      <input type="radio" name="gender" value="female" id="female" />
+
+      <br /><br />
+      <label for="t&c">Term&Conditions</label>
+      <input type="checkbox" name="t&c" value="accepted" id="t&c" />
+
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form> -->
+  </body>
+</html>

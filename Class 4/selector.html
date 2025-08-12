@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Practical Demo</title>
+    <style>
+      /* ---------- Basic Selectors ---------- */
+
+      /* Universal Selector */
+      * {
+        font-family: Arial, sans-serif;
+      }
+
+      /* Element Selector */
+      h1 {
+        color: darkblue;
+      }
+
+      /* Grouping Selector */
+      h2,
+      h3 {
+        color: darkgreen;
+      }
+
+      /* ---------- Attribute-Based Selectors ---------- */
+
+      /* ID Selector */
+      #uniqueTitle {
+        text-decoration: underline;
+        color: crimson;
+      }
+
+      /* Class Selector */
+      .highlight {
+        background-color: yellow;
+      }
+
+      /* Attribute Selector */
+      input[type="text"] {
+        border: 2px solid blue;
+        padding: 5px;
+      }
+
+      /* ---------- Combinators ---------- */
+
+      /* Descendant Selector */
+      div p {
+        color: purple;
+      }
+
+      /* Child Selector */
+      div > p {
+        font-weight: bold;
+      }
+
+      /* Adjacent Sibling Selector */
+      p + h3 {
+        background-color: lightgray;
+      }
+
+      .art1 + article {
+        background-color: blue;
+      }
+
+      .sec1 > article > span {
+        background-color: red;
+      }
+
+      /* ---------- Pseudo Classes ---------- */
+      a:hover {
+        color: red;
+        text-decoration: none;
+        /* text-decoration: wavy;
+        text-decoration-line: underline;
+        text-decoration-color: blue; */
+      }
+      button:active {
+        background-color: rgb(39, 1, 255);
+        padding: 10px;
+      }
+      input:checked {
+        outline: 2px solid green;
+      }
+      li:nth-of-type(3n) {
+        color: teal;
+      }
+
+      /* ---------- Pseudo Elements ---------- */
+      p::first-letter {
+        font-size: 2em;
+        color: darkred;
+      }
+      p::first-line {
+        text-transform: uppercase;
+      }
+      ::selection {
+        background-color: lightgreen;
+        color: black;
+      }
+
+      /* ---------- Outline Example ---------- */
+      /* input:focus {
+        outline: 3px dashed crimson;
+        outline-offset: 3px;
+      } */
+
+      input[type="text"] {
+        border: 5px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Selectors Practical Demo</h1>
+    <h2 id="uniqueTitle">ID Selector Example</h2>
+    <h3 class="highlight">Class Selector Example</h3>
+
+    <!-- Attribute Selector -->
+    <p>Type in the text box:</p>
+    <input type="text" placeholder="Text input" />
+
+    <!-- Combinators Example -->
+    <div>
+      <p>This is a paragraph inside a div (Descendant).</p>
+      <p>This is a direct child paragraph inside a div (Child).</p>
+      <span>
+        <p>This paragraph is nested deeper inside a span in div.</p>
+      </span>
+    </div>
+
+    <!-- Adjacent sibling -->
+    <p>Paragraph before H3</p>
+    <h3>H3 right after a paragraph</h3>
+
+    <!-- Pseudo Classes -->
+    <a href="#">Hover over this link</a>
+    <br /><br />
+    <button>Click me (active state)</button>
+    <br /><br />
+    <label><input type="checkbox" /> Check me</label>
+
+    <!-- Pseudo Elements -->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vehicula.
+    </p>
+
+    <!-- nth-of-type example -->
+    <ul>
+      <li>First item</li>
+      <li>Second item (nth-of-type)</li>
+      <li>Third item</li>
+      <li>First item</li>
+      <li>Second item (nth-of-type)</li>
+      <li>Third item</li>
+      <li>First item</li>
+      <li>Second item (nth-of-type)</li>
+      <li>Third item</li>
+      <li>First item</li>
+      <li>Second item (nth-of-type)</li>
+      <li>Third item</li>
+    </ul>
+
+    <section class="sec1">
+      <article class="art1">
+        <span>this is p 1tag</span>
+        <input type="text" name="" id="" />
+      </article>
+      <article class="art2">
+        <span>this is p 2tag</span>
+        <input type="email" name="" id="" />
+      </article>
+      <article class="art3">
+        <span>this is p 3tag</span>
+        <input type="text" name="" id="" />
+      </article>
+    </section>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid ipsum,
+      illo dolor esse voluptatibus ab quam iusto iure explicabo. Sint vel
+      placeat voluptate tenetur vitae minima fugit eligendi unde non qui dolorum
+      debitis recusandae, sequi, nesciunt culpa incidunt distinctio odio
+      sapiente excepturi autem molestias dolore soluta! Laboriosam pariatur
+      similique consequatur magni, consequuntur nam eos adipisci numquam cumque
+      odit, saepe repudiandae necessitatibus facere distinctio quidem voluptas?
+      Soluta doloremque omnis placeat. Esse, reiciendis? Enim qui consequuntur,
+      recusandae ratione facere voluptatem odio quisquam fuga beatae omnis eum
+      blanditiis possimus ea sapiente minima animi laudantium natus est. Dolores
+      ex corporis repudiandae excepturi consequuntur dolorum fugit quisquam
+      beatae dignissimos, atque molestiae ut dolorem, numquam est aliquid
+      praesentium natus vel error ipsum ratione. Facilis accusantium laboriosam
+      ad quibusdam, voluptas libero asperiores sequi ipsum, nemo perspiciatis
+      incidunt architecto error inventore tempore sed nisi exercitationem natus
+      voluptatum expedita! Facere temporibus nihil explicabo accusamus nisi
+      corrupti, totam, odio maxime tempore vel culpa. Tempora voluptas eos
+      officia eum at facere qui expedita autem adipisci fugit numquam itaque quo
+      quasi explicabo quae ullam, illo cum sit amet, alias nesciunt, repellendus
+      consectetur. Officia unde asperiores dolores ab quod repellat ex autem ea.
+      Saepe provident optio illum placeat ea accusantium quia vero dolor.
+    </p>
+  </body>
+</html>

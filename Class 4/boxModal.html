@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Box Model Example</title>
+<style>
+    /* Styling the box */
+    .box {
+        /* Content area size */
+        width: 300px;
+        height: 100px;
+        background-color: lightyellow;
+
+        /* Padding: space between content and border */
+        padding: 20px;
+
+        /* Border: wraps around padding + content */
+        border-width: 5px;
+        border-style: dashed;
+        border-color: darkblue;
+        border-radius: 10px;
+
+        /* Margin: space outside the border */
+        margin: 40px;
+
+        /* Text styling just for visibility */
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    /* Visual background to show margin area */
+    body {
+        background-color: #f0f0f0;
+    }
+</style>
+</head>
+<body>
+
+<h1>CSS Box Model Practical Demo</h1>
+
+<div class="box">
+    📦 This is my box
+</div>
+
+<p>Notice: The light yellow is the content area, space inside is padding, blue dashed line is border, and the gap outside is margin.</p>
+
+</body>
+</html>
