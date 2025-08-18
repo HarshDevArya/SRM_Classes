@@ -1,0 +1,184 @@
+/* General */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  margin-bottom: 10px;
+}
+.highlight {
+  color: #ff6600;
+}
+.btn {
+  padding: 10px 20px;
+  background: #ff6600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+section {
+  padding: 50px;
+  text-align: center;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #222;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+nav a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+#menu-btn {
+  display: none;
+}
+
+/* .popDiv {
+  position: relative;
+} */
+
+.popup {
+  background: #e65c00;
+  padding-right: 34px;
+  border-radius: 5px;
+  position: absolute;
+  top: 45px;
+  right: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 425px) {
+  #menu-btn {
+    display: block;
+  }
+  .nav {
+    display: none;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hero {
+  background: linear-gradient(to right, #333, #111);
+  color: white;
+  padding: 100px 20px;
+}
+.skill-bar {
+  margin: 15px auto;
+  width: 60%;
+}
+.progress {
+  width: 100%;
+  background: #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 15px;
+  background: #ff6600;
+  width: 0;
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+.project-card {
+  padding: 20px;
+  background: #f4f4f4;
+  border-radius: 10px;
+}
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.dark {
+  background: #111;
+  color: #eee;
+}
+
+/* Form CSS */
+
+/* Contact Section */
+#contact {
+  background: #f9f9f9;
+  padding: 60px 20px;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Container */
+#contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs and Textarea */
+#contact-form input,
+#contact-form textarea {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+/* Hover/Focus Effects */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #ff6600;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 102, 0, 0.5);
+}
+
+/* Button */
+#contact-form .btn {
+  background: #ff6600;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+#contact-form .btn:hover {
+  background: #e65c00;
+}
+
+/* Status Message */
+#status {
+  margin-top: 15px;
+  font-weight: 500;
+  color: #333;
+}
